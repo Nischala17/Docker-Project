@@ -210,7 +210,7 @@
 		<snapshotRepository>
 			<id>docker-project-snapshot</id>
 			<name>docker-project-snapshot</name>
-			<url>ttp://52.15.41.48:8081/repository/docker-project-snapshot/</url>
+			<url>http://52.15.41.48:8081/repository/docker-project-snapshot/</url>
 		</snapshotRepository>
 	</distributionManagement>
 
