@@ -10,19 +10,19 @@ pipeline{
             stage("docker build")
             {
               steps{ 
-                  docker build -t nischala17/docker-project:$tag_value .
+                  docker build -t nischala17/docker-project:latest .
                       }
             }
             stage("docker push") 
             {
                 steps {
-            docker push nischala17/docker-project:$tag_value
+            docker push nischala17/docker-project:latest
             }
             }
             stage("remove image")
             {
                 steps{
-            docker rmi nischala17/docker-project:$tag_value
+            docker rmi nischala17/docker-project:latest
             }
             }
             stage("all images")
