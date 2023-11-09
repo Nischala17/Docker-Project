@@ -10,7 +10,7 @@ pipeline{
             stage("docker build")
             {
               steps{ 
-                  sh docker build -t nischala17/docker-project:latest .
+                  sh docker build -t nischala17/Docker-Project:latest .
                       }
             }
             stage("docker push") 
